@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>tagName</title>
+   </head>
+   <body>
+     <nav>
+        <ul>
+            <li>Google</li>
+            <li>IES Borja Moll</li>
+            <li>auditòrium de Palma</li>
+            <li>Parc Bit</li>
+        </ul>
+     </nav> 
+      <script>
+         var encap = document.getElementsByTagName("li");
+         for (var i=0; i< encap.length; i++) {
+            var color=prompt('dim un color');
+            encap[i].style.backgroundColor = color
+         } 
+      </script>
+   </body>
+</html>

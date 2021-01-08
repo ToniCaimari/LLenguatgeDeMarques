@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 id=inici>pipipiripipo</h1>
+    <button onclick="newh1();">add h1</button>
+    <script>
+        function newh1(){
+            var elementnou= document.createElement('h2');
+            var encapçalament= document.createTextNode('new text')
+            elementnou.appendChild(encapçalament);
+            var elementpare= document.getElementById('inici')
+            elementpare.appendChild(elementnou)
+
+        }
+    </script>
+</body>
+</html>
