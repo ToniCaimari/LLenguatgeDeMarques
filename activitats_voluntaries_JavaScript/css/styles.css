@@ -1,0 +1,12 @@
+.destacar_p {
+  color: grey;
+  background-color: red;
+  font-size: 25pt;
+  font-weight: bold;
+}
+.nous_p {
+  color: green;
+  background-color: grey;
+  font-style: italic;
+  font-size: 30pt;
+}

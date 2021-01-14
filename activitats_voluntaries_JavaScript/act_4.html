@@ -11,10 +11,10 @@
     <script>
         function newh1(){
             var numero=prompt('quants nous encapçalaments vols?: ');
+            while (numero>0){
             var tag=prompt("quin tipus d'encapçalament vols que siguin?");
             var elementnou= document.createElement(tag);
             var noutest=prompt("escriu el teu encapçalament");
-            while (numero>0){
             var encapçalament= document.createTextNode(noutest)
             elementnou.appendChild(encapçalament);
             var elementpare= document.getElementById('inici');

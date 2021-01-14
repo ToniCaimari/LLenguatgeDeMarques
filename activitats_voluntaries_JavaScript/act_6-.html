@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Aquesta web té molta d'enllaços</p>
+<p> Alguns ens permeten anar a pàgines de cercadors com: <br><a href="https://www.google.es">Google</a>, <br><a href="https://www.bing.com">Bing</a>, <br> <a href="https://duckduckgo.com/">Duck Duck Go</a><br></p>
+ <p>També tenim enllaços a altres web interessants com per exemple: <br> <a href="https://www.travelbelize.org/">Belice</a> <br> <a href="https://vr.wowhungary.com/en/map/">Hungria</a><br></p>
+ <button  onclick="ff()";>links</button>
+ <script>
+     var list=document.getElementsByTagName('a')
+     var sum=0
+     var last=list.slice(-1)
+     
+     for (i=0; i<list.length; ++i){
+         if (i == 'a href="https://www.google.es"')
+         sum++;
+     }
+     function ff(){
+        var list=document.getElementsByTagName('a')
+        var sum=0
+     
+     
+     for (i=0; i<list.length; ++i){
+         if (i == 'a href="https://www.google.es"')
+         sum++;
+     }
+     alert("Hi ha "+list.length+" enllaços. I hi ha"+list+" enllaços a Google.")}
+    //  L'ultim és"+last+". I hi ha"+sum+" enllaços a Google."
+     
+ </script>
+</body>
+</html>

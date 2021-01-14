@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <style>.destacar_p {
+        color: grey;
+        background-color: red;
+        font-size: 25pt;
+        font-weight: bold;
+      }
+      .nous_p {
+        color: green;
+        background-color: grey;
+        font-style: italic;
+        font-size: 30pt;
+      }
+      </style>
+</head>
+<body>
+    <header>Lore Ipsum</header>
+    <main id="p" class="destacar_p"
+ >
+        <p >paragraf1</p>
+        <p >paragraf2</p>
+        <p >paragraf3</p>
+    </main>
+    <button onclick="change()">Change!</button>
+    <script>
+        function change(){
+            document.getElementById("p").className="nous_p";
+        }
+    </script>
+    <footer>Lore Impsum</footer>
+</body>
+</html>
