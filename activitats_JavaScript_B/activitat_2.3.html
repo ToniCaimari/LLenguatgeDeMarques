@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css2.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>pi</li>
+            <li>po</li>
+            <li>pi</li>
+        </ul>
+    </header>
+    <main>
+        <button onclick="changetop()">edita adalt!</button>
+        <button onclick="changebot()">edita abaix!</button>
+    </main>
+    <footer>fiodksoldkwi wpofasodkasopdjia njebduas ociockdasodkawidjeajo.</footer>
+    <script>
+        function changetop(){
+            var element=document.getElementsByTagName('header');
+            element[0].className='vistalista';
+        }
+        function changebot(){
+            var paragraf=prompt('qué vols ecriure?')
+            document.getElementsByTagName('footer')[0].innerHTML=paragraf;
+        }
+    </script>
+</body>
+</html>

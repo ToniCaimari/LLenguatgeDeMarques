@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css5.css">
+</head>
+<body>
+    <h1>Aplicar un estil d'una classe al CSS</h1>
+    <section>Això és una secció de la pàgina</section>
+    <button onclick="pop()">¡Pop!</button>
+    <script>
+        function pop(){
+        var element=document.getElementsByTagName('section');
+            element[0].className='format';
+        }
+    </script>
+</body>
+</html>
