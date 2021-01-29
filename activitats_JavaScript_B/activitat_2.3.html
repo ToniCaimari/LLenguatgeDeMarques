@@ -18,15 +18,19 @@
         <button onclick="changetop()">edita adalt!</button>
         <button onclick="changebot()">edita abaix!</button>
     </main>
-    <footer>fiodksoldkwi wpofasodkasopdjia njebduas ociockdasodkawidjeajo.</footer>
+    <footer>fiodksoldkwi wpofasodkasopdjia njebduas ociockdasodkawidjeajo.
+        <p>fokeokdoleod</p>
+    </footer>
     <script>
         function changetop(){
             var element=document.getElementsByTagName('header');
-            element[0].className='vistalista';
+            var llista=element[0].getElementsByTagName('ul');
+            llista[0].className='vistalista';
         }
         function changebot(){
             var paragraf=prompt('qué vols ecriure?')
-            document.getElementsByTagName('footer')[0].innerHTML=paragraf;
+            var peu=document.getElementsByTagName('footer')[0];
+            peu.getElementsByTagName('p')[0].innerHTML=paragraf;
         }
     </script>
 </body>

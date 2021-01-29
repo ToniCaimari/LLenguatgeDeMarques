@@ -8,19 +8,10 @@
 <body>
     <form action="">
         <p>DNI:</p>
-        <input type="text" id="camp" required pattern="[0-9]{8}+[A-Z]{1}">
+        <input type="text" id="camp" required pattern="[0-9]{8}[A-Z]{1}">
         <p>Correu:</p>
         <input type="text" id="camp" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
         <p><input type="submit" value="envia" onclick="validacio()"></p>
     </form>
-    <script>
-        function validacio(){
-            valor = document.getElementById("camp").value;
-            if( !(("\w\.{4}+@\w\.{4}\.[a-zA-Z]{2,4}$").test(valor))){ 
-            alert("L'adreça de correu no és vàlida");
-            return false;
-        }
-    }
-    </script>
 </body>
 </html>

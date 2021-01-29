@@ -11,16 +11,26 @@
         <input type="text" id="camp1">
         <p>Correu:</p>
         <input type="text" id="camp2">
-        <p><input type="submit" value="envia" onclick="validacio()"></p>
+        <p><input type="submit" value="envia" onclick="nif(document.getElementById('camp1'));email(document.getElementById('camp2'))"></p>
     </form>
     <script>
-        function validacio(){
-            var valor = document.getElementById("camp").value;
-            if( !(("\w\.{4}+@\w\.{4}\.[a-zA-Z]{2,4}$").test(valor))){ 
-            alert("L'adreça de correu no és vàlida");
-            return false;
+        function nif() {
+        var  nif=document.getElementById('camp1')
+        var expresion_regular_dni
+        
+        expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
+        
+        if(expresion_regular_dni.test (nif) == true){
+            alert('Dni correcto');
+            }
+        else{
+            alert('Dni erroneo, formato no válido');
         }
-    }
+        }
+        function email(){
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
     </script>
 </body>
 </html>

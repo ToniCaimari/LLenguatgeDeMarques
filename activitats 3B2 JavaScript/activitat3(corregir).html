@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            color: blue;
+        background-color: skyblue;
         }
         div{
             width: 800px;
@@ -30,20 +30,22 @@
     </style>
 </head>
 <body>
-    <div id="pare"><h1>A continuació veim la llista dels guanyadors del concurs</h1></div>
+    <div ><h1 id="pare">A continuació veim la llista dels guanyadors del concurs</h1></div>
     <aside>
         <form action="">
             Nom:
             <input type="text">
-            <input type="submit" value="Elegir" onclick="intro_h2()">
+            <input type="submit" id="nom" value="Elegir" onclick="intro_h2()">
         </form>
     </aside>
     <script>
         function intro_h2(){
-            var nom=prompt("afageix el guanyador")
-            var elementpare= document.getElementById("pare")
-            elementpare.createTextNode("h2")
-        }
+            var h2=document.createElement("h2");
+            var nom=document.getElementById("nom");
+            var nouNom= document.createTextNode(nom)
+            h2.appendChild(nouNom);
+            var elementpare= document.getElementById("pare");
+            elementpare.appendChild(h2);}
     </script>
 </body>
 </html>
