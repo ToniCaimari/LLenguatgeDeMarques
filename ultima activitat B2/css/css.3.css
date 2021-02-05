@@ -1,0 +1,7 @@
+.boss{
+    visibility: hidden;
+    
+}
+.noboss{
+    visibility: visible;
+}
