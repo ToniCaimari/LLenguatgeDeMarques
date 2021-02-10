@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/css.3.css">
 </head>
 <body>
-    <img class="boss" src="img/2.jpeg" alt=""><br>
+    <img class="boss" src="img/2.jpeg" alt="" style="visibility: hidden;"><br>
     <button onclick="visible()">hEy BosS</button>
+    <button onclick="invisible()">Killhim</button>
     <button onclick="gran()">hE BiG</button>
     <button onclick="petit()">smol</button>
     <script>
         function visible(){
-            var imatge=document.getElementsByClassName("boss")
-            if(imatge.className="boss"){imatge.className="noboss"};
-       
-            if(imatge.className="noboss"){imatge.className="boss"};
+            document.getElementsByClassName("boss")[0].style.visibility="visible"
+
         }
+        function invisible(){
+            document.getElementsByClassName("boss")[0].style.visibility="hidden"}
         function gran(){
-
-        }
+            document.getElementsByClassName("boss")[0].style.heigh="150%";
+            document.getElementsByClassName("boss")[0].style.width="150%"}
+        
         function petit(){
-
+            document.getElementsByClassName("boss")[0].style.heigh="5%";
+            document.getElementsByClassName("boss")[0].style.width="5%"
         }
     </script>
 </body>
