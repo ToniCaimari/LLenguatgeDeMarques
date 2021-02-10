@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="">
+        <p> Nom de l'usuari:</p>
+            <input type="text" required>
+        <p>Correu:</p>
+        <input type="text" id="camp" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"> <!-- es demana un correu amb el patró de verificació per defecte-->
+        <p> Telèfon:</p>
+            <input type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!-- es demana un telèfon amb un patró de verificació adequat-->
+        <p>Contrasenya</p>
+            <input type="password" required pattern="[a-zA-Z]{1}[a-zA-Z0-9]{3-7}[0-9]{2}"> <!-- no fa falta determinar la longitut màxima i mínima ja que amb el format de la verificació queden implícites-->
+        <p><input type="submit" value="envia" onclick="validacio()"></p>
+    </form>
 </body>
 </html>

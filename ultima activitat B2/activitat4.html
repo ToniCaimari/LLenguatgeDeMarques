@@ -9,7 +9,7 @@
 <body>
     <h2>Diez fenómenos astronómicos que no te puedes perder en el 2021 </h2>
 
-<p id='a' onclick="vision('a')">nuevo año ofrece muchos placeres celestes, como encuentros planetarios, lluvias de meteoros y hasta un eclipse de «luna de sangre». </p> 
+<p id='a' onclick="vision('a')">nuevo año ofrece muchos placeres celestes, como encuentros planetarios, lluvias de meteoros y hasta un eclipse de «luna de sangre». </p>  <!--l'esdeveniment onclick invoca una funció js amb l'id com a input-->
 <p id='b' onclick="vision('b')">pesar de un año plagado de confinamientos y aislamiento social, los cielos estrellados del 2020 nos han traído consuelo y asombro con un desfile de fenómenos celestes cautivadores. El calendario astronómico del año pasado estuvo a rebosar de vistas memorables, entre ellas la aparición del cometa NEOWISE, las mejores vistas de la década de Marte, una luna azul en Halloween y la esperada e histórica conjunción entre Júpiter y Saturno.</p> 
 <p id='c' onclick="vision('c')">todo el 2021 también habrá decenas de fenómenos astronómicos a la vista. Esta es nuestra selección de los fenómenos celestes que vale la pena apuntar en el calendario de este nuevo año.</p> 
 
@@ -23,7 +23,7 @@
 <p id='f' onclick="vision('f')">Las personas que estén en el oeste de Norteamérica, el oeste de Sudamérica, Australia y Sudeste Asiático podrán presenciar cómo la Luna se tiñe de rojo durante un eclipse lunar total. Este fenómeno astronómico espectacular ocurre cuando el Sol, la Tierra y la Luna están alineados de forma que la sombra de nuestro planeta cubre por completo la faz de la Luna.</p>
 <script>
     function vision(x){
-        elemento=document.getElementById(x)
+        elemento=document.getElementById(x) //La funció treballa localitzant l'id de l'input i modificant la seva visibilitat segons si és o no visible
         if(elemento.style.opacity!='0'){elemento.style.opacity='0'} 
         else{elemento.style.opacity='100'};
         

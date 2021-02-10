@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/css1.css">
 </head>
 <body>
     <header>
@@ -16,11 +17,11 @@
         <h2>Velocidad de conexión a Internet</h2>
         <p>La velocidad de conexión a Internet que tengamos dependerá, directamente, de la tarifa que hayamos contratado. Es así de simple porque, al final, hablamos de un servicio, y es el proveedor el que tiene la responsabilidad contractual de cumplir con la velocidad que nos ha ofrecido. Sin embargo, debemos tener mucho cuidado con este tema, ya que algunos proveedores pueden ofrecer una velocidad elevada, pero esta no está totalmente garantizada. Por ejemplo, en conexiones de fibra óptica, lo normal es ofrecer un mínimo garantizado del 80% de la velocidad máxima.</p>
         <h3>El servicio que hayamos contratado, y la calidad del mismo, determinarán la base de nuestra velocidad de conexión a Internet, aunque esta puede verse afectada, posteriormente, por otros aspectos importantes, entre los que podemos destacar:</h3>
-        - El router y el hardware que utilicemos.
+        <p>- El router y el hardware que utilicemos.
         - Si nos conectamos por cable o por Wi-Fi, y en este último caso, el estándar utilizado, la distancia-  y los obstáculos.
         - La configuración también puede influir en la velocidad máxima.
         - El grado de saturación de nuestra conexión.
-        - El estado de los servidores a los que nos conectemos.
+        - El estado de los servidores a los que nos conectemos.</p>
         </section>
         <section>
         <p>Por ejemplo, puede que tengamos una conexión de fibra a 1 Gbps, pero si nos conectamos a través de un cable de 100 Mbps estaremos infrautilizándola por un error tan grave como fácil de solucionar. Por otro lado, si tenemos una conexión perfecta pero nos conectamos a servidores que están saturados y tienen una alta latencia nuestra experiencia será terrible, aunque obviamente la culpa no será de la velocidad de nuestra conexión a Internet.</p>
@@ -29,5 +30,15 @@
         <footer>
         <p>Publicado el 24 enero, 2021 por Isidro Ros</p>
         </footer>
+        <button onclick="visible('h1')">h1</button> <!-- Mitjançant la funció onclick cridam a la funcio de js junt amb l'input adecuat -->
+        <button onclick="visible('h2')">h2</button>
+        <button onclick="visible('h3')">h3</button>
+        <button onclick="visible('p')">p</button>
+        <script>
+            function visible(x){
+                 elemento=document.getElementsByTagName(x);  //Intentam cambiar la característica "opacity" de 0 a 100 tan sols en l'element seleccionat (Nota: no funciona...)
+                elemento.style.opacity='100';
+            }
+        </script>
 </body>
 </html>
